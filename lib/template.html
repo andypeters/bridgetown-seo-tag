@@ -3,7 +3,7 @@
   <title>{{ seo_tag.title }}</title>
 {% endif %}
 
-{% if seo_tag.title %}
+{% if seo_tag.title? %}
   <meta property="og:title" content="{{ seo_tag.title }}" />
 {% endif %}
 
@@ -65,7 +65,7 @@
   <meta name="twitter:image:alt" content="{{ seo_tag.image.alt }}" />
 {% endif %}
 
-{% if seo_tag.title %}
+{% if seo_tag.title? %}
   <meta property="twitter:title" content="{{ seo_tag.title }}" />
 {% endif %}
 
