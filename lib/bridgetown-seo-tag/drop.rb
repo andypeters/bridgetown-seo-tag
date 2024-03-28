@@ -66,7 +66,7 @@ module Bridgetown
       def title
         @title ||= if site_title && page_title != site_title &&
             !format_string(page_title).start_with?(site_title + TAGLINE_SEPARATOR)
-                     page_title + TITLE_SEPARATOR + site_title
+                     page_title
                    else
                      page_title || site_title
                    end
